@@ -1,0 +1,35 @@
+# Robots.txt for BaseAIM.com
+# This domain is under new ownership as of September 2025
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow search engines to index the new ownership notice
+Allow: /index.html
+Allow: /privacy-policy.html
+Allow: /terms-of-use.html
+
+# Sitemap location
+Sitemap: https://baseaim.com/sitemap.xml
+
+# Crawl delay to be respectful of server resources
+Crawl-delay: 1
+
+# Block potentially harmful bots that might be looking for old content
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Note to crawlers: This domain is under new ownership and has no relation
+# to any previous financial or cryptocurrency operations
