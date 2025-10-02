@@ -281,7 +281,8 @@ section {
 /* Cards */
 .disclaimer-card,
 .business-card,
-.verification-card {
+.verification-card,
+.find-us-card {
     background: var(--bg-card);
     border-radius: 16px;
     padding: 48px;
@@ -502,6 +503,22 @@ section {
     overflow: hidden;
 }
 
+.domain-reference {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin: 20px 0;
+    letter-spacing: 0.05em;
+    font-family: 'Courier New', monospace;
+}
+
+.domain-instruction {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
 .cta-box::before {
     content: '';
     position: absolute;
@@ -614,6 +631,86 @@ section {
     font-weight: 600;
 }
 
+/* Find Us Section */
+.find-us-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+}
+
+.find-us-content p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.website-location {
+    background: var(--emphasis-bg);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+    text-align: center;
+    border: 2px solid var(--emphasis-border);
+}
+
+.website-location h3 {
+    color: var(--heading-color);
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.domain-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin: 24px 0;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+}
+
+.access-instruction {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.access-instruction strong {
+    color: var(--heading-color);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.security-notice {
+    background: var(--info-bg);
+    border-radius: 12px;
+    padding: 28px;
+    margin-top: 32px;
+}
+
+.security-notice h3 {
+    color: var(--info-heading);
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.security-notice p {
+    color: var(--info-text);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.security-notice p:last-child {
+    margin-bottom: 0;
+}
+
 /* Footer */
 footer {
     background: var(--footer-bg);
@@ -662,6 +759,21 @@ footer {
     font-size: 0.9375rem;
     line-height: 1.6;
     margin-bottom: 8px;
+}
+
+.footer-domain {
+    color: #e2e8f0;
+    font-weight: 600;
+    margin-top: 16px;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.footer-domain-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 4px;
 }
 
 .footer-bottom {
@@ -715,7 +827,8 @@ footer {
     
     .disclaimer-card,
     .business-card,
-    .verification-card {
+    .verification-card,
+    .find-us-card {
         padding: 32px 24px;
     }
     
@@ -755,6 +868,18 @@ footer {
     .theme-toggle svg {
         width: 20px;
         height: 20px;
+    }
+
+    .domain-display {
+        font-size: 1.75rem;
+    }
+
+    .website-location {
+        padding: 24px;
+    }
+
+    .security-notice {
+        padding: 20px;
     }
 }
 
